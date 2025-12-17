@@ -1,11 +1,13 @@
 import React from 'react';
 import Hero from './Hero';
 import Brokerage from './Brokerage';
+import PricingTabs from './PricingTabs';
 
 function PricingPage() {
     return ( 
         <>
-            <Hero />=
+            <Hero />
+            <PricingTabs/>
             <Brokerage />
         </>
      );

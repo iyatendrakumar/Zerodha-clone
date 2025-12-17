@@ -24,7 +24,7 @@ function Hero() {
   ];
 
   return (
-    <div className="container mb-5 pb-5">
+    <div className="container mb-5 ">
       {/* Hero Heading */}
       <div className="row mt-3 mb-5 mt-md-5 text-center">
         <h1 className="fs-2 mt-3 mt-md-5">Charges</h1>
