@@ -11,10 +11,12 @@ import SupportPage from './landing_page/support/SupportPage';
 import Navbar from './landing_page/Navbar';
 import Footer from './landing_page/Footer';
 import NotFound from './landing_page/NotFound';
+import ScrollToTop from './landing_page/ScrollToTop';
 
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
+    <ScrollToTop />
     <Navbar />
     <Routes>
       <Route path="/" element={ <HomePage/> }></Route>
