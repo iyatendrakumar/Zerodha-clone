@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import useLogoNavigation from "../hooks/useLogoNavigation";
 function Navbar() {
+   const handleLogoClick = useLogoNavigation();
   return (
     <nav
       className="navbar navbar-expand-lg border-bottom sticky-top"
@@ -9,14 +10,17 @@ function Navbar() {
     >
       <div className="container py-2">
         
-        {/* Logo */}
-        <Link className="navbar-brand" href="/">
-          <img
-            src="media/images/logo.svg"
-            alt="Logo"
-            style={{ width: "130px" }}
-          />
-        </Link>
+        <div
+      className="navbar-brand"
+      onClick={handleLogoClick}
+      style={{ cursor: "pointer" }}
+    >
+      <img
+        src="media/images/logo.svg"
+        alt="Zerodha"
+        style={{ width: "130px" }}
+      />
+    </div>
 
         {/* Mobile Toggle */}
         <button

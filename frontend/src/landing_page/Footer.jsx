@@ -1,15 +1,24 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import useLogoNavigation from "../hooks/useLogoNavigation";
 function Footer() {
+  const handleLogoClick = useLogoNavigation();
   return (
     <footer className=" border-top bg-light mt-5">
       <div className="container py-5">
         <div className="row mt-5">
           <div className="col">
-            <img
-              src="media/images/logo.svg"
-              style={{ width: "130px" }}
-              alt="Logo"
-            />
+            <div
+             
+              onClick={handleLogoClick}
+              style={{ cursor: "pointer" }}
+            >
+              <img
+                src="media/images/logo.svg"
+                alt="Logo"
+                style={{ width: "130px" }}
+              />
+            </div>
             <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
           </div>
           <div className="col">
