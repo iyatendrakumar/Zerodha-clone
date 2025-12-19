@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect } from 'react';
+
 import Hero from './Hero';
 import Awards from './Awards';
 import Stats from './Stats';
@@ -8,7 +10,11 @@ import OpenAccount from '../OpenAccount';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
+
 function HomePage() {
+    useEffect(() => {
+    document.title = "Home – Zerodha";
+  }, []);
     return ( 
         <>
             <Hero />

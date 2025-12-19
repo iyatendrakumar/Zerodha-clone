@@ -1,5 +1,5 @@
 import React from "react";
-
+import {useEffect} from 'react';
 import Hero from "./Hero";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
@@ -7,6 +7,9 @@ import Universe from "./Universe";
 
 
 function ProductPage() {
+  useEffect(() => {
+    document.title = "Products – Zerodha";
+  }, []);
   return (
     <>
       <Hero />
