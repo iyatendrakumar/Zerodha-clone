@@ -5,7 +5,7 @@ function SignUp() {
     document.title = "Signup – Zerodha";
   }, []);
     return ( 
-        <h1>Sign Up</h1>
+        <h1>Sign Up page is being Implemented</h1>
      );
 }
 
